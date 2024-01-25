@@ -3,8 +3,8 @@ import { Link, Flex, IconButton, Slide, chakra, VStack, useColorModeValue, useDi
 import NavItem from './NavItem';
 import { ISubNav } from './SubNav';
 import { motion, isValidMotionProp } from 'framer-motion';
-import AppConfig from '../../app.config'
 import Logo from './Logo';
+import AppConfig from '../../app.config'
 
 const NAV_LINKS: ISubNav[] = [
     { label: "Home", href: "/" },
@@ -18,13 +18,13 @@ const NAV_LINKS: ISubNav[] = [
         {
           label: "Telegram",
           subLabel: "Follow us on Telegram",
-          href_blank: "https://t.me/Ghost_Token_Portal",
+          href_blank: AppConfig.telegramURL,
           logo: "/telegram.png",
         },
         {
           label: "Twitter",
           subLabel: "Follow us on Twitter",
-          href_blank: "https://twitter.com/Ghost_Token_Sol",
+          href_blank: AppConfig.twitterULR,
           logo: "/twitter.webp",
         }
       ]
@@ -33,7 +33,7 @@ const NAV_LINKS: ISubNav[] = [
 
 const Hero = () => {
     const { isOpen, onToggle } = useDisclosure();
-    const textAnimation = { translateY: [100, 0], opacity: [0, 1] }
+    const textAnimation = { translateY: [25, 0], opacity: [0, 1], rotate: [0.06, 0] }
     const transition = { duration: "2", ease: "easeInOut" }
 
     const ChakraBox = chakra(motion.div, {
@@ -58,7 +58,7 @@ const Hero = () => {
             <Center mb="12">
                 <VStack width={["95%", "90%"]} alignItems="center" gap="0">
                     <ChakraBox animate={textAnimation} transition={transition} opacity="0" display="flex" justifyContent="center">
-                        <Image width={["90%", "45%"]} src="hero.png" alt="Ghost"></Image>
+                        <Image width={["90%", "45%"]} src="hero.png" alt="easyJeet"></Image>
                     </ChakraBox>
                     <ChakraBox animate={textAnimation} transition={{...transition, delay: "0.5"}} opacity="0" display="flex" justifyContent="center">
                         <VStack width={["90%", "90%"]} alignItems="center" color="black" backgroundColor="rgb(250,250,250,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
@@ -70,14 +70,14 @@ const Hero = () => {
                                     </VStack>
                                 ) : (
                                         <HStack>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">Launch at</Text>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontWeight="900" color="main">{ AppConfig.launchUTC }</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">Launch on</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">{ AppConfig.launchUTC }</Text>
                                             <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">UTC</Text>
                                         </HStack>
                                     )
                                 }
                             <Text fontWeight={["200", "200", "400"]} textAlign="center"><b>EasyJeet</b>: the best low cost airline now also in <b>Solana Skies</b>! Buckle up and enjoy the journey to the highest skies. Your safety is our priority!</Text>
-                            <Link mt="3" display="flex" justifyContent="center" href="https://t.me/Ghost_Token_Portal" target="_blank">
+                            <Link mt="3" display="flex" justifyContent="center" href={AppConfig.telegramURL} target="_blank">
                                 <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='red' fontFamily="Cooper Black" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
                         </VStack>

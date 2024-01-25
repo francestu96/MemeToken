@@ -17,6 +17,7 @@ import { FaTwitter, FaTelegram } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import Logo from './Logo';
 import Link from 'next/link';
+import AppConfig from '../../app.config'
 
 const SocialButton = ({
   children,
@@ -70,25 +71,25 @@ export default function Footer() {
             <HStack gap="3">
               <Logo/>
               <HStack alignItems="end">
-                    <Text fontSize="2xl" px="1" mb="-1" fontFamily="Cooper Black" fontWeight="900" color="main">Ghost</Text>
+                    <Text fontSize="2xl" px="1" mb="-1" fontFamily="Cooper Black" fontWeight="900" color="main">easyJeet</Text>
                 </HStack>
             </HStack>
             <Text fontSize={'sm'}>
-              © 2024 Ghost. All rights reserved
+              © 2024 EasyJeet. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Telegram'} href={'https://t.me/Ghost_Token_Portal'}>
+              <SocialButton label={'Telegram'} href={AppConfig.telegramURL}>
                 <FaTelegram />
               </SocialButton>
-              <SocialButton label={'Twitter'} href={'https://twitter.com/Ghost_Token_Sol'}>
+              <SocialButton label={'Twitter'} href={AppConfig.twitterULR}>
                 <FaTwitter />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Support</ListHeader>
-            <Link href={'https://t.me/Ghost_Token_Portal'}>Telegram</Link>
-            <Link href={'https://twitter.com/Ghost_Token_Sol'}>Twitter</Link>
+            <Link href={AppConfig.telegramURL}>Telegram</Link>
+            <Link href={AppConfig.twitterULR}>Twitter</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Developer</ListHeader>
