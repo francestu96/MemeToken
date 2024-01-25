@@ -1,11 +1,11 @@
 import { LinkBox, LinkOverlay } from '@chakra-ui/react';
 import Image from 'next/image';
 
-const Logo = () => {
+const Logo = ({ size }: { size?: number }) => {
   return (
     <LinkBox>
       <LinkOverlay href="/">
-        <Image src={"/logo.png"} height={60} width={60} alt="Ghost"/>
+        <Image src={"/logo.png"} height={size ? size : 60} width={size ? size : 60} alt="easyJeet"/>
       </LinkOverlay>
     </LinkBox>
   );

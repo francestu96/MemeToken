@@ -70,7 +70,7 @@ export default function Footer() {
             <HStack gap="3">
               <Logo/>
               <HStack alignItems="end">
-                    <Text fontSize="2xl" px="1" mb="-1" fontFamily="GOT" fontWeight="900" color="main">Ghost</Text>
+                    <Text fontSize="2xl" px="1" mb="-1" fontFamily="Cooper Black" fontWeight="900" color="main">Ghost</Text>
                 </HStack>
             </HStack>
             <Text fontSize={'sm'}>

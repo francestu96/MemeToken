@@ -9,7 +9,7 @@ const config = {
   useSystemColorMode: false,
 };
 
-const theme = extendTheme({ config, colors: { "main": "#BA365C" } });
+const theme = extendTheme({ config, colors: { "main": "#F26722" } });
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

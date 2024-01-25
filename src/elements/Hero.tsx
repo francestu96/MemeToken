@@ -4,6 +4,7 @@ import NavItem from './NavItem';
 import { ISubNav } from './SubNav';
 import { motion, isValidMotionProp } from 'framer-motion';
 import AppConfig from '../../app.config'
+import Logo from './Logo';
 
 const NAV_LINKS: ISubNav[] = [
     { label: "Home", href: "/" },
@@ -40,52 +41,44 @@ const Hero = () => {
     })
 
     return (
-        <VStack width="100%" backgroundImage="background.jpg" height="100vh" backgroundSize={'cover'} justifyContent="space-between">
-            <Flex align="start" width="100%" justify="space-between" display={['none', 'none', 'flex','flex']} px="40" py="5">
-                <LinkBox>
-                    <LinkOverlay href="/">
-                        <Text fontSize="5xl" fontFamily="GOT" fontWeight="900" color="main">Ghost</Text>
-                    </LinkOverlay>
-                </LinkBox>
+        <VStack width="100%" backgroundImage="background.jpg" height="100vh" backgroundSize={'cover'} justifyContent="space-between" backgroundPosition="center">
+            <Flex align="start" width="100%" justify="space-between" display={['none', 'none', 'flex','flex']} px="40" py="5" alignItems="center">
+                <Logo size={100}/>
                 <HStack gap={'15px'} position="absolute" left="50%" zIndex="10" transform="translate(-50%, 0%)" p="5" borderRadius={"full"} backgroundColor="rgb(50,50,50,0.8)">
                     {NAV_LINKS.map((link) => (
                         <NavItem key={`link-${link.label}`} {...link} />
                     ))}
                 </HStack>
             </Flex>
-            <Flex align="start" width="100%" justify="space-between" display={['flex', 'flex', 'none','none']} px="10" py="5">
-                <LinkBox>
-                    <LinkOverlay href="/">
-                        <Text fontSize="5xl" fontFamily="GOT" fontWeight="900" color="main">Ghost</Text>
-                    </LinkOverlay>
-                </LinkBox>
+            <Flex align="start" width="100%" justify="space-between" display={['flex', 'flex', 'none','none']} px="10" py="5" alignItems="center">
+                <Logo size={60}/>
                 <IconButton aria-label="Open Menu" size="lg" mr={2} icon={<HamburgerIcon/>} onClick={onToggle}/>
             </Flex>
 
             <Center mb="12">
-                <VStack width={["95%", "90%"]} alignItems="center">
+                <VStack width={["95%", "90%"]} alignItems="center" gap="0">
                     <ChakraBox animate={textAnimation} transition={transition} opacity="0" display="flex" justifyContent="center">
-                        <Image width={["60%", "55%"]} src="hero.png" alt="Ghost"></Image>
+                        <Image width={["90%", "45%"]} src="hero.png" alt="Ghost"></Image>
                     </ChakraBox>
                     <ChakraBox animate={textAnimation} transition={{...transition, delay: "0.5"}} opacity="0" display="flex" justifyContent="center">
                         <VStack width={["90%", "90%"]} alignItems="center" color="black" backgroundColor="rgb(250,250,250,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
                             {
                                 AppConfig.tokenAddress ? (
                                     <VStack fontWeight="900">
-                                        <Text fontSize={["lg", "xl", "2xl"]} fontFamily="GOT" color="main">CA</Text>
+                                        <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">CA</Text>
                                         <Text fontSize={["2xs", "xs", "sm", "md"]} color="main">{ AppConfig.tokenAddress }</Text>
                                     </VStack>
                                 ) : (
                                         <HStack>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="GOT" color="main">Launch at</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">Launch at</Text>
                                             <Text fontSize={["lg", "xl", "2xl"]} fontWeight="900" color="main">{ AppConfig.launchUTC }</Text>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="GOT" color="main">UTC</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">UTC</Text>
                                         </HStack>
                                     )
                                 }
-                            <Text fontWeight={["200", "200", "400"]} textAlign="center">Winter is coming even on <b>Solana Beach</b>. Get ready to battle the wights with <b>Ghost</b> and Jon Snow in the mud</Text>
+                            <Text fontWeight={["200", "200", "400"]} textAlign="center"><b>EasyJeet</b>: the best low cost airline now also in <b>Solana Skies</b>! Buckle up and enjoy the journey to the highest skies. Your safety is our priority!</Text>
                             <Link mt="3" display="flex" justifyContent="center" href="https://t.me/Ghost_Token_Portal" target="_blank">
-                                <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='red' fontFamily="GOT" size="lg">JOIN THE COMMUNITY</Button>
+                                <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='red' fontFamily="Cooper Black" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
                         </VStack>
                     </ChakraBox>

@@ -4,7 +4,7 @@ import AppConfig from '../../app.config'
 const Buy = () => {
   return (
     <VStack id="buy" width="full">
-        <Text fontSize="4xl" fontFamily="GOT" px="10" pt="10">BUY & CHART</Text>
+        <Text fontSize="4xl" fontFamily="Cooper Black" px="10" pt="10">BUY & CHART</Text>
         {
             AppConfig.tokenAddress ? (
                 <Stack width="full" pb="10" backgroundColor="gray.800" direction={["column", "row"]} px={["0", "5", "10", "20"]}>
