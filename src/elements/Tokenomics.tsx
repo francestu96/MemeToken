@@ -63,7 +63,7 @@ const Tokenomics = () => {
                     </Stack>
                 </VStack>
             </Center>
-            <Text width="100%" textAlign="center" backgroundColor="gray.900" color="gray.500" px="10">*15% of total supply will be hold by us split in 5 different wallets with 3% each: <b>Dev</b>, <b>Treasury</b>, <b>Marketing 1</b>, <b>Marketing 2</b> and <b>Marketing 3</b></Text>
+            <Text width="100%" textAlign="center" backgroundColor="gray.900" color="gray.500" px="10">*10% of total supply will be hold by us split in 5 different wallets with 2% each: <b>Dev</b>, <b>Treasury</b>, <b>Marketing 1</b>, <b>Marketing 2</b> and <b>Marketing 3</b></Text>
 
         </VStack>
     );
