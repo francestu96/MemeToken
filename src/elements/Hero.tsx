@@ -33,7 +33,7 @@ const NAV_LINKS: ISubNav[] = [
 
 const Hero = () => {
     const { isOpen, onToggle } = useDisclosure();
-    const textAnimation = { translateY: [25, 0], opacity: [0, 1], rotate: [0.06, 0] }
+    const textAnimation = { translateY: [25, 0], opacity: [0, 1] }
     const transition = { duration: "2", ease: "easeInOut" }
 
     const ChakraBox = chakra(motion.div, {
