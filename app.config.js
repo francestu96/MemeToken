@@ -1,5 +1,5 @@
 const AppConfig = {
-    tokenAddress: undefined,
+    tokenAddress: "8tM42ZnKt9udT3NRzkDTcmvFUQiE54VSk5zjaJNYZ8ug",
     telegramURL: "https://t.me/EasyJeet_Portal",
     twitterULR: "https://twitter.com/EasyJeetSolana",
     launchUTC: "Sun 28 19:00"
