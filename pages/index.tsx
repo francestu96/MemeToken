@@ -4,7 +4,7 @@ import Home from 'templates/Home';
 
 const HomePage: NextPage = () => {
   return (
-    <Default pageName="The Simpsol">
+    <Default pageName="The Simpsols">
       <Home/>
     </Default>
   );

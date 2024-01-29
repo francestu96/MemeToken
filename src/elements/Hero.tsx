@@ -34,7 +34,7 @@ const NAV_LINKS: ISubNav[] = [
 const Hero = () => {
     const { isOpen, onToggle } = useDisclosure();
     const textAnimation = { translateY: [25, 0], opacity: [0, 1] }
-    const transition = { duration: "2", ease: "easeInOut" }
+    const transition = { duration: "0", ease: "easeInOut" }
 
     const ChakraBox = chakra(motion.div, {
         shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -64,10 +64,10 @@ const Hero = () => {
 
             <Center mb="12">
                 <VStack width={["95%", "90%"]} alignItems="center" gap="0">
-                    <ChakraBox animate={textAnimation} transition={transition} opacity="0" display="flex" justifyContent="center">
+                    <ChakraBox className="animated-div" animate={textAnimation} opacity="0" display="flex" justifyContent="center">
                         <Image width={["90%", "45%"]} src="hero.png" alt="The Simpsols"></Image>
                     </ChakraBox>
-                    <ChakraBox animate={textAnimation} transition={{...transition, delay: "0.5"}} opacity="0" display="flex" justifyContent="center">
+                    <ChakraBox className="animated-div" animate={textAnimation} transition={{ delay: "0.5"}} opacity="0" display="flex" justifyContent="center">
                         <VStack width={["90%", "90%"]} alignItems="center" color="white" backgroundColor="rgb(50,50,50,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
                             {
                                 AppConfig.tokenAddress ? (
