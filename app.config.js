@@ -1,8 +1,8 @@
 const AppConfig = {
     tokenAddress: undefined,
-    telegramURL: "https://t.me/cooming_soon!",
-    twitterULR: "https://twitter.com/cooming_soon!",
-    launchUTC: "Tue 30 19:00"
+    telegramURL: "https://t.me/JupiDoge_Portal",
+    twitterULR: "https://twitter.com/JupiterDogeSol",
+    launchUTC: "Tue 30 00:00"
 }
 
 module.exports = AppConfig
