@@ -58,7 +58,14 @@ const Hero = () => {
                 </HStack>
             </Flex>
             <Flex align="start" width="100%" justify="space-between" display={['flex', 'flex', 'none','none']} px="10" py="5" alignItems="center">
-                <Logo size={60}/>
+                <LinkBox>
+                    <LinkOverlay href="/">
+                        <VStack gap="0">
+                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" mb="-3" textShadow="-4px 4px 0 #000">the</Text>
+                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" textShadow="-4px 4px 0 #000">Simpsols</Text>
+                        </VStack>
+                    </LinkOverlay>
+                </LinkBox>
                 <IconButton aria-label="Open Menu" size="lg" mr={2} icon={<HamburgerIcon/>} onClick={onToggle}/>
             </Flex>
 
