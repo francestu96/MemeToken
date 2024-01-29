@@ -76,7 +76,7 @@ const Hero = () => {
                                         </HStack>
                                     )
                                 }
-                            <Text fontWeight={["200", "200", "400"]} textAlign="center"><b>The Simpsols</b>: the best low cost airline now also in <b>Solana Skies</b>! Buckle up and enjoy the journey to the highest skies. Your safety is our priority!</Text>
+                            <Text fontWeight={["200", "200", "400"]} textAlign="center">D&aptos;oh! Just bought some of <b>SIMPSOL</b> meme token, hoping it's not a <b>"D&aptos;oh-ge"</b> kind of situation! To the moon... or Moe's, whichever comes first!</Text>
                             <Link mt="3" display="flex" justifyContent="center" href={AppConfig.telegramURL} target="_blank">
                                 <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='yellow' fontFamily="CustomFont" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
