@@ -7,6 +7,23 @@ html {
     scroll-behavior: smooth !important;
 }
 
-.animated-div{ 
-    transition: ease-in-out 2s; 
+@keyframes animated-hero {
+    from {
+        opacity: 0;
+        transform: translateY(25px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+
+.animated-div { 
+    animation-name: animated-hero;
+    animation-duration: 2s;
+}
+
+.animated-div.delayed {
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }

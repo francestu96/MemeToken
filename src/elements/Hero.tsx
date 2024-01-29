@@ -43,14 +43,7 @@ const Hero = () => {
     return (
         <VStack width="100%" backgroundImage="background.jpg" height="100vh" backgroundSize={'cover'} justifyContent="space-between" backgroundPosition="center">
             <Flex align="start" width="100%" justify="space-between" display={['none', 'none', 'flex','flex']} px="40" py="5" alignItems="center">
-                <LinkBox>
-                    <LinkOverlay href="/">
-                        <VStack gap="0">
-                            <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="gold" mb="-7" textShadow="-4px 4px 0 #000">the</Text>
-                            <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="gold" textShadow="-4px 4px 0 #000">Simpsols</Text>
-                        </VStack>
-                    </LinkOverlay>
-                </LinkBox>
+                <Logo size={100}/>
                 <HStack gap={'15px'} position="absolute" left="50%" zIndex="10" transform="translate(-50%, 0%)" p="5" borderRadius={"full"} backgroundColor="rgb(50,50,50,0.8)">
                     {NAV_LINKS.map((link) => (
                         <NavItem key={`link-${link.label}`} {...link} />
@@ -58,23 +51,16 @@ const Hero = () => {
                 </HStack>
             </Flex>
             <Flex align="start" width="100%" justify="space-between" display={['flex', 'flex', 'none','none']} px="10" py="5" alignItems="center">
-                <LinkBox>
-                    <LinkOverlay href="/">
-                        <VStack gap="0">
-                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" mb="-3" textShadow="-3px 3px 0 #000">the</Text>
-                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" textShadow="-2px 2px 0 #000">Simpsols</Text>
-                        </VStack>
-                    </LinkOverlay>
-                </LinkBox>
+                <Logo size={60}/>
                 <IconButton aria-label="Open Menu" size="lg" mr={2} icon={<HamburgerIcon/>} onClick={onToggle}/>
             </Flex>
 
             <Center mb="12">
                 <VStack width={["95%", "90%"]} alignItems="center" gap="0">
-                    <ChakraBox className="animated-div" animate={textAnimation} opacity="0" display="flex" justifyContent="center">
+                    <Box className="animated-div" display="flex" justifyContent="center">
                         <Image width={["90%", "45%"]} src="hero.png" alt="The Simpsols"></Image>
-                    </ChakraBox>
-                    <ChakraBox className="animated-div" animate={textAnimation} transition={{ delay: "0.5"}} opacity="0" display="flex" justifyContent="center">
+                    </Box>
+                    <Box className="animated-div delayed" display="flex" justifyContent="center" opacity="0">
                         <VStack width={["90%", "90%"]} alignItems="center" color="white" backgroundColor="rgb(50,50,50,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
                             {
                                 AppConfig.tokenAddress ? (
@@ -95,7 +81,7 @@ const Hero = () => {
                                 <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='yellow' fontFamily="CustomFont" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
                         </VStack>
-                    </ChakraBox>
+                    </Box>
                 </VStack>
             </Center>
 
