@@ -45,7 +45,7 @@ const Hero = () => {
             <Flex align="start" width="100%" justify="space-between" display={['none', 'none', 'flex','flex']} px="40" py="5" alignItems="center">
                 <LinkBox>
                     <LinkOverlay href="/">
-                        <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="main">JupiDodge</Text>
+                        <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="main">JupiDoge</Text>
                     </LinkOverlay>
                 </LinkBox>
                 <HStack gap={'15px'} position="absolute" left="50%" zIndex="10" transform="translate(-50%, 0%)" p="5" borderRadius={"full"} backgroundColor="rgb(50,50,50,0.8)">
@@ -57,7 +57,7 @@ const Hero = () => {
             <Flex align="start" width="100%" justify="space-between" display={['flex', 'flex', 'none','none']} px="10" py="5" alignItems="center">
                 <LinkBox>
                     <LinkOverlay href="/">
-                        <Text fontSize="3xl" fontFamily="CustomFont" fontWeight="900" color="main">JupiDodge</Text>
+                        <Text fontSize="3xl" fontFamily="CustomFont" fontWeight="900" color="main">JupiDoge</Text>
                     </LinkOverlay>
                 </LinkBox>
                 <IconButton aria-label="Open Menu" size="lg" mr={2} icon={<HamburgerIcon/>} onClick={onToggle}/>
@@ -66,7 +66,7 @@ const Hero = () => {
             <Center mb="12">
                 <VStack width={["95%", "90%"]} alignItems="center" gap="0">
                     <Box className="animated-div" display="flex" justifyContent="center">
-                        <Image width={["90%", "45%"]} src="hero.png" alt="JupiDodge"></Image>
+                        <Image width={["90%", "45%"]} src="hero.png" alt="JupiDoge"></Image>
                     </Box>
                     <Box className="animated-div delayed" display="flex" justifyContent="center" opacity="0">
                         <VStack width={["90%", "90%"]} alignItems="center" color="gray.200" backgroundColor="rgb(50,50,50,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">

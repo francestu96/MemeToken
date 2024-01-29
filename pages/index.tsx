@@ -4,7 +4,7 @@ import Home from 'templates/Home';
 
 const HomePage: NextPage = () => {
   return (
-    <Default pageName="JupiDodge">
+    <Default pageName="JupiDoge">
       <Home/>
     </Default>
   );
