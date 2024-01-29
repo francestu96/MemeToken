@@ -6,9 +6,9 @@ const Roadmap = () => {
     return (
         <Center width="full" id="roadmap" p="10" textColor="gray.700" backdropBlur="10px" backgroundImage="/roadmap-bg.jpg" backgroundPosition="center" backgroundSize="cover" textAlign="center">
           <VStack width="inherit" color="black">
-            <Text fontSize="4xl" color="gray.200" fontFamily="Cooper Black">ROADMAP</Text>
+            <Text fontSize="4xl" color="gray.200" fontFamily="CustomFont">ROADMAP</Text>
             <VStack backgroundColor="rgb(250,250,250,0.8)" _hover={{ boxShadow: "0px 0px 10px rgba(255,255,255,0.5);", cursor: "pointer"}} p="10" width={["85%", "80%", "75%", "70%"]} borderWidth="thin" borderColor="gray.700" borderRadius="2xl">
-              <Text fontSize={["lg", "xl", "3xl", "4xl"]} fontWeight="500" fontFamily="Cooper Black" color="main">
+              <Text fontSize={["lg", "xl", "3xl", "4xl"]} fontWeight="500" fontFamily="CustomFont" color="main">
                 The community
               </Text>
               <Text>Commence the project with a resilient community that not only shares a common vision but also serves as a vital foundation for collaborative efforts.</Text>
@@ -31,7 +31,7 @@ const Roadmap = () => {
               <Divider orientation='vertical' borderColor="gray.700"/>
             </Center>
             <VStack backgroundColor="rgb(250,250,250,0.8)" _hover={{ boxShadow: "0px 0px 10px rgba(255,255,255,0.5);", cursor: "pointer"}} p="10" width={["85%", "80%", "75%", "70%"]} borderWidth="thin" borderColor="gray.700" borderRadius="2xl">
-              <Text fontSize={["lg", "xl", "3xl", "4xl"]} fontWeight="500" fontFamily="Cooper Black" color="main">
+              <Text fontSize={["lg", "xl", "3xl", "4xl"]} fontWeight="500" fontFamily="CustomFont" color="main">
                 Fighting the jeets
               </Text>
               <Text>Navigating the challenges of fighting the jeets requires strategic planning, resilience, and a united front to effectively address and overcome these obstacles.</Text>
@@ -54,7 +54,7 @@ const Roadmap = () => {
               <Divider orientation='vertical' borderColor="gray.700"/>
             </Center>
             <VStack backgroundColor="rgb(250,250,250,0.8)" _hover={{ boxShadow: "0px 0px 10px rgba(255,255,255,0.5);", cursor: "pointer"}} p="10" width={["85%", "80%", "75%", "70%"]} borderWidth="thin" borderColor="gray.700" borderRadius="2xl">
-              <Text fontSize={["lg", "xl", "3xl", "4xl"]} fontWeight="500" fontFamily="Cooper Black" color="main">
+              <Text fontSize={["lg", "xl", "3xl", "4xl"]} fontWeight="500" fontFamily="CustomFont" color="main">
                 Become the MEME
               </Text>
               <Text>Embrace the potential for becoming the meme, allowing your unique and shareable qualities to resonate with a wide audience and leaving an indelible mark on the digital landscape.</Text>

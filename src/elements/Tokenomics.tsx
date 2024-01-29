@@ -16,30 +16,30 @@ const Tokenomics = () => {
         <VStack width="100%" gap="0">
             <Center id="tokenomics" py="20" backgroundColor="gray.900" backgroundImage="/tokenomics-bg.png" backgroundPosition="center" backgroundSize="cover" width="full">
                 <VStack gap="10" fontSize="2xl" width={["90%", "80%", "70%"]}>
-                    <Text fontSize="4xl" fontFamily="Cooper Black" px="10">TOKENOMICS*</Text>
+                    <Text fontSize="4xl" fontFamily="CustomFont" px="10">TOKENOMICS*</Text>
                     <Stack ref={ref} direction={["column", "row"]} alignItems="center" gap="20" >
                         <SimpleGrid columns={2}>
                             <ChakraBox animate={isInView ? { translateX: [-200, 0], opacity: [0, 1] } : 'none'} transition={{ duration: "1.5", ease: "easeInOut", delay: "0.5" }} opacity="0">
-                                <VStack borderBottom="1px solid #F26722" borderRight="1px solid #F26722" pr="10" pb="10">
-                                    <Text fontFamily="Cooper Black" color="main" fontSize={["xl", "3xl"]}><CountUp useEasing={false} end={100} duration={5} start={50} suffix=" M"/></Text>
+                                <VStack borderBottom="1px solid #edc90a" borderRight="1px solid #edc90a" pr="10" pb="10">
+                                    <Text fontFamily="CustomFont" color="main" fontSize={["xl", "3xl"]}><CountUp useEasing={false} end={100} duration={5} start={50} suffix=" M"/></Text>
                                     <Text color="gray.500" fontWeight="bold" fontSize="lg">Supply</Text>
                                 </VStack>
                             </ChakraBox>
                             <ChakraBox animate={isInView ? { translateX: [-200, 0], opacity: [0, 1] } : 'none'} transition={{ duration: "1.5", ease: "easeInOut" }} opacity="0">
-                                <VStack borderBottom="1px solid #F26722" pl="10" pb="10">
-                                    <Text fontFamily="Cooper Black" color="main" fontSize={["xl", "3xl"]}>BURNT</Text>
+                                <VStack borderBottom="1px solid #edc90a" pl="10" pb="10">
+                                    <Text fontFamily="CustomFont" color="main" fontSize={["xl", "3xl"]}>BURNT</Text>
                                     <Text color="gray.500" fontWeight="bold" fontSize="lg">Liquidity</Text>
                                 </VStack>
                             </ChakraBox>
                             <ChakraBox animate={isInView ? { translateX: [-200, 0], opacity: [0, 1] } : 'none'} transition={{ duration: "1.5", ease: "easeInOut", delay: "0.6"}} opacity="0">
-                                <VStack borderRight="1px solid #F26722" pr="10" pt="10">
-                                    <Text fontFamily="Cooper Black" color="main" fontSize={["xl", "3xl"]}>REVOKED</Text>
+                                <VStack borderRight="1px solid #edc90a" pr="10" pt="10">
+                                    <Text fontFamily="CustomFont" color="main" fontSize={["xl", "3xl"]}>REVOKED</Text>
                                     <Text color="gray.500" fontWeight="bold" fontSize="lg">Contract Mint/Ownership</Text>
                                 </VStack>
                             </ChakraBox>
                             <ChakraBox animate={isInView ? { translateX: [-200, 0], opacity: [0, 1] } : 'none'} transition={{ duration: "1.5", ease: "easeInOut", delay: "0.8" }} opacity="0">
                                 <VStack pl="10" pt="10">
-                                    <Text fontFamily="Cooper Black" color="main" fontSize={["xl", "3xl"]}>0/0</Text>
+                                    <Text fontFamily="CustomFont" color="main" fontSize={["xl", "3xl"]}>0/0</Text>
                                     <Text color="gray.500" fontWeight="bold" fontSize="lg">Fees</Text>
                                 </VStack>
                             </ChakraBox>

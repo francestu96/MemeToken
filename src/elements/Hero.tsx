@@ -43,7 +43,14 @@ const Hero = () => {
     return (
         <VStack width="100%" backgroundImage="background.jpg" height="100vh" backgroundSize={'cover'} justifyContent="space-between" backgroundPosition="center">
             <Flex align="start" width="100%" justify="space-between" display={['none', 'none', 'flex','flex']} px="40" py="5" alignItems="center">
-                <Logo size={100}/>
+                <LinkBox>
+                    <LinkOverlay href="/">
+                        <VStack gap="0">
+                            <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="gold" mb="-7" textShadow="-4px 4px 0 #000">the</Text>
+                            <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="gold" textShadow="-4px 4px 0 #000">Simpsols</Text>
+                        </VStack>
+                    </LinkOverlay>
+                </LinkBox>
                 <HStack gap={'15px'} position="absolute" left="50%" zIndex="10" transform="translate(-50%, 0%)" p="5" borderRadius={"full"} backgroundColor="rgb(50,50,50,0.8)">
                     {NAV_LINKS.map((link) => (
                         <NavItem key={`link-${link.label}`} {...link} />
@@ -58,27 +65,27 @@ const Hero = () => {
             <Center mb="12">
                 <VStack width={["95%", "90%"]} alignItems="center" gap="0">
                     <ChakraBox animate={textAnimation} transition={transition} opacity="0" display="flex" justifyContent="center">
-                        <Image width={["90%", "45%"]} src="hero.png" alt="easyJeet"></Image>
+                        <Image width={["90%", "45%"]} src="hero.png" alt="The Simpsols"></Image>
                     </ChakraBox>
                     <ChakraBox animate={textAnimation} transition={{...transition, delay: "0.5"}} opacity="0" display="flex" justifyContent="center">
-                        <VStack width={["90%", "90%"]} alignItems="center" color="black" backgroundColor="rgb(250,250,250,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
+                        <VStack width={["90%", "90%"]} alignItems="center" color="white" backgroundColor="rgb(50,50,50,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
                             {
                                 AppConfig.tokenAddress ? (
                                     <VStack fontWeight="900">
-                                        <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">CA</Text>
+                                        <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">CA</Text>
                                         <Text fontSize={["2xs", "xs", "sm", "md"]} color="main">{ AppConfig.tokenAddress }</Text>
                                     </VStack>
                                 ) : (
                                         <HStack>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">Launch on</Text>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">{ AppConfig.launchUTC }</Text>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="Cooper Black" color="main">UTC</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">Launch on</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">{ AppConfig.launchUTC }</Text>
+                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">UTC</Text>
                                         </HStack>
                                     )
                                 }
-                            <Text fontWeight={["200", "200", "400"]} textAlign="center"><b>EasyJeet</b>: the best low cost airline now also in <b>Solana Skies</b>! Buckle up and enjoy the journey to the highest skies. Your safety is our priority!</Text>
+                            <Text fontWeight={["200", "200", "400"]} textAlign="center"><b>The Simpsols</b>: the best low cost airline now also in <b>Solana Skies</b>! Buckle up and enjoy the journey to the highest skies. Your safety is our priority!</Text>
                             <Link mt="3" display="flex" justifyContent="center" href={AppConfig.telegramURL} target="_blank">
-                                <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='red' fontFamily="Cooper Black" size="lg">JOIN THE COMMUNITY</Button>
+                                <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='yellow' fontFamily="CustomFont" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
                         </VStack>
                     </ChakraBox>

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Cooper Black';
-    src: url('/fonts/Cooper Black.ttf');
+    font-family: 'CustomFont';
+    src: url('/fonts/CustomFont.otf');
 }
 
 html {
