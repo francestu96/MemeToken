@@ -61,8 +61,8 @@ const Hero = () => {
                 <LinkBox>
                     <LinkOverlay href="/">
                         <VStack gap="0">
-                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" mb="-3" textShadow="-4px 4px 0 #000">the</Text>
-                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" textShadow="-4px 4px 0 #000">Simpsols</Text>
+                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" mb="-3" textShadow="-3px 3px 0 #000">the</Text>
+                            <Text fontSize="2xl" fontFamily="CustomFont" fontWeight="900" color="gold" textShadow="-2px 2px 0 #000">Simpsols</Text>
                         </VStack>
                     </LinkOverlay>
                 </LinkBox>
