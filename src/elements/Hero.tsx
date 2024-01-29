@@ -57,7 +57,7 @@ const Hero = () => {
             <Flex align="start" width="100%" justify="space-between" display={['flex', 'flex', 'none','none']} px="10" py="5" alignItems="center">
                 <LinkBox>
                     <LinkOverlay href="/">
-                        <Text fontSize="5xl" fontFamily="CustomFont" fontWeight="900" color="main">JupiDodge</Text>
+                        <Text fontSize="3xl" fontFamily="CustomFont" fontWeight="900" color="main">JupiDodge</Text>
                     </LinkOverlay>
                 </LinkBox>
                 <IconButton aria-label="Open Menu" size="lg" mr={2} icon={<HamburgerIcon/>} onClick={onToggle}/>
@@ -69,7 +69,7 @@ const Hero = () => {
                         <Image width={["90%", "45%"]} src="hero.png" alt="JupiDodge"></Image>
                     </Box>
                     <Box className="animated-div delayed" display="flex" justifyContent="center" opacity="0">
-                        <VStack width={["90%", "90%"]} alignItems="center" color="white" backgroundColor="rgb(50,50,50,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
+                        <VStack width={["90%", "90%"]} alignItems="center" color="gray.200" backgroundColor="rgb(50,50,50,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
                             {
                                 AppConfig.tokenAddress ? (
                                     <VStack fontWeight="900">
@@ -78,9 +78,9 @@ const Hero = () => {
                                     </VStack>
                                 ) : (
                                         <HStack>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">Launch on</Text>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">{ AppConfig.launchUTC }</Text>
-                                            <Text fontSize={["lg", "xl", "2xl"]} fontFamily="CustomFont" color="main">UTC</Text>
+                                            <Text fontSize={["md", "lg", "2xl"]} fontFamily="CustomFont" color="main">Launch on</Text>
+                                            <Text fontSize={["md", "lg", "2xl"]} fontFamily="CustomFont" color="main">{ AppConfig.launchUTC }</Text>
+                                            <Text fontSize={["md", "lg", "2xl"]} fontFamily="CustomFont" color="main">UTC</Text>
                                         </HStack>
                                     )
                                 }
