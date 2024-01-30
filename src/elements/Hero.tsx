@@ -84,7 +84,7 @@ const Hero = () => {
                                         </HStack>
                                     )
                                 }
-                            <Text fontWeight={["200", "200", "400"]} fontSize={["sm", "md"]} textAlign="center">Woof! <b>Elon</b> has a new four-legged companion, <b>Chow-Chow</b> joins the Musk family!</Text>
+                            <Text fontWeight={["200", "200", "400"]} fontSize={["sm", "md"]} textAlign="center">Woof! I'm <b>Chow-Chow</b>, the crypto with the biggest bark and orbit! To the moon? Nah, let's aim for <b>Jupiter and beyond</b>!</Text>
                             <Link mt="3" display="flex" justifyContent="center" href={AppConfig.telegramURL} target="_blank">
                                 <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='orange' fontFamily="CustomFont" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
