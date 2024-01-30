@@ -71,11 +71,11 @@ export default function Footer() {
             <HStack gap="3">
               <Logo/>
               <HStack alignItems="end">
-                    <Text fontSize="2xl" px="1" mb="-1" fontFamily="CustomFont" fontWeight="900" color="main">JupiDoge</Text>
+                    <Text fontSize="2xl" px="1" mb="-1" fontFamily="CustomFont" fontWeight="900" color="main">Chow-Chow</Text>
                 </HStack>
             </HStack>
             <Text fontSize={'sm'}>
-              © 2024 JupiDoge. All rights reserved
+              © 2024 Chow-Chow. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Telegram'} href={AppConfig.telegramURL}>

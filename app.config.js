@@ -1,7 +1,7 @@
 const AppConfig = {
-    tokenAddress: "DBixDPnKhZtsfqD4nB3g47Vyv7XnEvUgh2XMQtcmxWqx",
-    telegramURL: "https://t.me/jupidogeportal",
-    twitterULR: "https://twitter.com/JupiterDogeSol",
+    tokenAddress: undefined,
+    telegramURL: "https://t.me/coomin_soon!",
+    twitterULR: "https://twitter.com/cooming_soon!",
     launchUTC: "Tue 30 00:00"
 }
 
