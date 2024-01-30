@@ -66,7 +66,7 @@ const Hero = () => {
             <Center mb="12">
                 <VStack width={["95%", "90%"]} alignItems="center" gap="0">
                     <Box className="animated-div" display="flex" justifyContent="center">
-                        <Image width={["90%", "45%"]} src="hero.png" alt="Chow-Chow"></Image>
+                        <Image width={["60%", "45%"]} src="hero.png" alt="Chow-Chow"></Image>
                     </Box>
                     <Box className="animated-div delayed" display="flex" justifyContent="center" opacity="0">
                         <VStack width={["90%", "90%"]} alignItems="center" color="gray.800" backgroundColor="rgb(250,250,250,0.8)" borderWidth="thin" borderColor="gray.700" borderRadius="2xl" p="5">
@@ -77,16 +77,16 @@ const Hero = () => {
                                         <Text fontSize={["2xs", "xs", "sm", "md"]} color="main">{ AppConfig.tokenAddress }</Text>
                                     </VStack>
                                 ) : (
-                                        <HStack>
-                                            <Text fontSize={["md", "lg", "2xl"]} fontFamily="CustomFont" color="main">Launch on</Text>
-                                            <Text fontSize={["md", "lg", "2xl"]} fontFamily="CustomFont" color="main">{ AppConfig.launchUTC }</Text>
-                                            <Text fontSize={["md", "lg", "2xl"]} fontFamily="CustomFont" color="main">UTC</Text>
+                                        <HStack fontWeight={900}>
+                                            <Text fontSize={["lg", "xl", "4xl"]} fontFamily="CustomFont" color="main">Launch on</Text>
+                                            <Text fontSize={["lg", "xl", "4xl"]} fontFamily="CustomFont" color="main">{ AppConfig.launchUTC }</Text>
+                                            <Text fontSize={["lg", "xl", "4xl"]} fontFamily="CustomFont" color="main">UTC</Text>
                                         </HStack>
                                     )
                                 }
-                            <Text fontWeight={["200", "200", "400"]} textAlign="center">Woof! I'm <b>Chow-Chow</b>, the crypto with the biggest bark and orbit! To the moon? Nah, let's aim for <b>Jupiter and beyond</b>!</Text>
+                            <Text fontWeight={["200", "200", "400"]} fontSize={["sm", "md"]} textAlign="center">Woof! <b>Elon</b> has a new four-legged companion, <b>Chow-Chow</b> joins the Musk family!</Text>
                             <Link mt="3" display="flex" justifyContent="center" href={AppConfig.telegramURL} target="_blank">
-                                <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='yellow' fontFamily="CustomFont" size="lg">JOIN THE COMMUNITY</Button>
+                                <Button backgroundColor="main" fontSize={["md", "lg", "xl"]} borderRadius="xl" colorScheme='orange' fontFamily="CustomFont" size="lg">JOIN THE COMMUNITY</Button>
                             </Link>
                         </VStack>
                     </Box>
